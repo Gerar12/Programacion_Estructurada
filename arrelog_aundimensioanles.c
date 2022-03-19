@@ -1,27 +1,41 @@
-#include<stdio.h>
+//Los arreglos se le define el TIpo de dato, nombre y tamaño 
+
+#include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    printf("Arreglos unidimensionales.\n\n");
+    printf("Areglos udimencioanles \n");
 
-    int listaEnteros[3];
-    listaEnteros[0] = 4;
-    listaEnteros[1] = 5;
-    listaEnteros[2] = 6;
+//Se pone [ ] para indicar cuantos arrelgos contendra nuestra lista...
+    int listas[3];
+    
+//Se manda a llamar el nombre dela lista y la posision para indicar que valor tendra
+    listas[0] = 1;
+    listas[1] = 5;
+    listas[2] = 7;
 
-    float listaFlotantes[] = {23.4, 34.5, 45.6, 45.6, 56.7};
 
-    char listaCaracteres[4];
-    listaCaracteres[0] = 'D';
-    listaCaracteres[1] = 'a';
-    listaCaracteres[2] = 'n';
-    listaCaracteres[3] = 'i';
+//Tambien podemos definir los valres desde el comienzo con el sigueinte ejemplo flotante
+float floatList[] = {23.3, 34.5, 32.4, 44.2};
+// En este ejemplo podemos ver que contiene 4 areglos
 
-    printf("\nPrimer entero: \t\t %d", listaEnteros[0]);
-    printf("\nUltimo flotante: \t %f", listaFlotantes[4]);
-    printf("\nLista de caracteres: \t %c%c%c%c. \n", listaCaracteres[0], listaCaracteres[1], listaCaracteres[2], listaCaracteres[3]);
+//Ejemplo caracteres
+// IMPORTANTE DATO DE PONER LAS COMIILAS SIMPLES '''''' esas no las otras 
+char listaCaracteres[5]; 
+    listaCaracteres[0] = 'd';
+    listaCaracteres[1] = 'i';
+    listaCaracteres[2] = 'a';
+    listaCaracteres[3] = 'n';
+    listaCaracteres[4] = 'a';
 
-    printf("\n");
+
+printf("\n Mi primer entero sera igual a: %i \n", listas[0]);
+
+printf("\n Mi primer Flotante sera igual a: %f \n", floatList[0]);
+
+printf("\nLista de caracteres: \t %c%c%c%c%c. \n", listaCaracteres[0], listaCaracteres[1], listaCaracteres[2], listaCaracteres[3], listaCaracteres[4]);
+
 
     return 0;
 }
